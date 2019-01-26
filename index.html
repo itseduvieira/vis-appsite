@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Visual Propaganda Aérea</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="container">
+            <div class="sign-up-content">
+                <form method="POST" class="signup-form">
+                    <h2 class="form-title">Bem vindo, Fulano</h2>
+                    <p class="sub">
+                        Defina sua senha para acesso ao app Visual no Ar
+                    </p>
+                    <div class="form-textbox">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" value="fulano@empresa.com.br" />
+                    </div>
+
+                    <div class="form-textbox">
+                        <label for="pass">Senha</label>
+                        <input type="password" name="pass" id="pass" />
+                    </div>
+
+                    <div class="form-textbox">
+                        <label for="confirm">Confirmar</label>
+                        <input type="password" name="confirm" id="confirm" />
+                    </div>
+
+                    <div class="form-group">
+                        <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                        <label for="agree-term" class="label-agree-term"><span><span></span></span>Eu concordo com os <a href="#" class="term-service">Termos de uso</a></label>
+                    </div>
+
+                    <div class="form-textbox">
+                        <input type="submit" name="submit" id="submit" class="submit" value="Definir Senha" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
