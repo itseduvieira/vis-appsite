@@ -1,15 +1,44 @@
 $(document).ready(function() {
     var code = param('code');
+    var redirect = 'http://www.visualnoar.com.br';
 
     if(code) {
-        $('.main').fadeIn('slow');
-
         $.get('https://vis-api.herokuapp.com/activate/' + code, function(data) {
             $('#titleName').text(data.name);
             $('#email').val(data.email);
-        })
+
+            $('.bg').fadeIn('slow', function() {
+                $('.main').fadeIn('slow');
+            });
+
+            $('#submit').click(function(e) {
+                e.preventDefault();
+                
+                var height = $('.sign-up-content').height();
+                $('.sign-up-content').css('height', height);
+
+                $('.sign-up-content').children().hide();
+                $('.loader').css('top', (height / 2) - 40);
+                $('.loader').show();
+
+                var parameters = {
+                    code: code,
+                    password: $('#pass').val()
+                };
+
+                $.post('https://vis-api.herokuapp.com/activate/' + code, parameters, function(data) {
+                    window.location = redirect;
+                }).fail(function(err) {
+                    $('.sign-up-content').children().show();
+
+                    $('.loader').hide();
+                });
+            });
+        }).fail(function(err) {
+            window.location = redirect;
+        });
     } else {
-        window.location = 'http://www.visualnoar.com.br';
+        window.location = redirect;
     }
 });
 
