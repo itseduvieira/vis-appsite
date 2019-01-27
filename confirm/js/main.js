@@ -3,6 +3,21 @@ $(document).ready(function() {
     var redirect = 'http://www.visualnoar.com.br';
 
     if(code) {
+        $('.show-hide-pass').click(function() {
+            $('#pass').focus();
+        });
+
+        $('.show-hide-pass > span').click(function() {
+            var input = $('#pass');
+            if (input.attr("type") == "password") {
+                $('.show-hide-pass > span').text('ESCONDER');
+                input.attr("type", "text");
+            } else {
+                $('.show-hide-pass > span').text('MOSTRAR');
+                input.attr("type", "password");
+            }
+        });
+
         $.get('https://vis-api.herokuapp.com/activate/' + code, function(data) {
             $('#titleName').text(data.name);
             $('#email').val(data.email);
@@ -16,6 +31,12 @@ $(document).ready(function() {
 
                 if($('#pass').val().length < 6) {
                     alert('A senha deve possuir mais de 6 caracteres');
+
+                    return;
+                }
+
+                if(!$('#agree-term').is(':checked')) {
+                    alert('Os termos de uso devem ser aceitos');
 
                     return;
                 }
