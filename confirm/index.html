@@ -13,18 +13,18 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+    <div class="bg"></div>
     <div class="main">
         <div class="container">
             <div class="sign-up-content">
                 <form method="POST" class="signup-form">
-                    <h2 class="form-title">Bem vindo, Fulano</h2>
+                    <h2 class="form-title">Bem vindo, <span id="titleName"></span></h2>
                     <p class="sub">
                         Defina sua senha para acesso ao app Visual no Ar
                     </p>
                     <div class="form-textbox">
                         <label for="email">Email</label>
-                        <input type="text" name="email" id="email" value="fulano@empresa.com.br" />
+                        <input type="text" name="email" id="email" disabled="disabled" />
                     </div>
 
                     <div class="form-textbox">
