@@ -13,6 +13,12 @@ $(document).ready(function() {
 
             $('#submit').click(function(e) {
                 e.preventDefault();
+
+                if($('#pass').val().length < 6) {
+                    alert('A senha deve possuir mais de 6 caracteres');
+
+                    return;
+                }
                 
                 var height = $('.sign-up-content').height();
                 $('.sign-up-content').css('height', height);

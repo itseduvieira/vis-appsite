@@ -301,7 +301,7 @@ input {
   font-weight: 700;
   font-size: 14px;
   font-family: Poppins;
-  padding: 16px 30px 16px 120px; }
+  padding: 16px 30px 16px 100px; }
 
 .form-textbox {
   position: relative; }
@@ -322,14 +322,10 @@ input {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px; }
 
-#confirm {
+#pass {
+  border-top: none;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px; }
-
-#pass {
-  border: none;
-  border-left: solid 2px #ebebeb;
-  border-right: solid 2px #ebebeb; }
 
 input[type=checkbox]:not(old) {
   width: 2em;
