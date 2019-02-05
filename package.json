@@ -1,0 +1,21 @@
+{
+  "name": "vis-site-app",
+  "version": "1.0.0",
+  "description": "Visual no Ar App",
+  "scripts": {
+    "start": "node node_modules/gulp/bin/gulp.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://efvi@bitbucket.org/pglabs/vis-site-app.git"
+  },
+  "author": "Eduardo Vieira <eduardofelipevieira@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/pglabs/vis-site-app#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1"
+  },
+  "url": "https://app.visualnoar.com.br"
+}
