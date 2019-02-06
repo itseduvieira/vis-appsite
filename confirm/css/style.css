@@ -17,14 +17,14 @@ header {
 .container-header {
   width: 100%;
   height: 72px;
-  background-color: rgba(1, 1, 1, 0.8);
+  background-color: #111;
   position: fixed;
   z-index: 501;
 }
 
 .header-logo {
   position: absolute;
-  left: 40px;
+  left: 32px;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -49,6 +49,7 @@ header {
   color: transparent;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  cursor: unset;
 }
 
 .row {
@@ -273,12 +274,14 @@ h2 {
   height: 100%;
   z-index: -1;
   display: none;
+  opacity: 0.8;
 }
 
 body {
   font-size: 14px;
   line-height: 1.8;
   color: #222;
+  background: #141515;
   font-weight: 600;
   font-family: Poppins;
   margin: 0px;
@@ -348,16 +351,16 @@ h1 {
     -o-border-radius: 5px;
     -ms-border-radius: 5px; }
   .form-radio input:checked + label {
-    background-color: #1da0f2;
+    background-color: #20a8d8;
     color: #FFF;
-    border-color: #1da0f2;
+    border-color: #20a8d8;
     z-index: 1; }
   .form-radio input:focus + label {
     outline: none; }
   .form-radio input:hover {
-    background-color: #1da0f2;
+    background-color: #20a8d8;
     color: #FFF;
-    border-color: #1da0f2; }
+    border-color: #20a8d8; }
 
 input {
   border: solid 2px #ebebeb;
@@ -461,13 +464,13 @@ input[type=checkbox]:not(old):checked + label > span:before {
   color: #888; }
 
 .term-service {
-  color: #1da0f2;
+  color: #20a8d8;
   text-decoration: none; }
   .term-service:hover {
     text-decoration: underline; }
 
 .submit {
-  background: #1da0f2;
+  background: #20a8d8;
   color: #FFF;
   border: none;
   padding: 15px 20px;

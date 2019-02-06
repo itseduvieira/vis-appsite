@@ -2,6 +2,10 @@ $(document).ready(function() {
     var code = param('code');
     var redirect = 'https://app.visualnoar.com.br/#download';
 
+    $('.header-logo a').click(function(e) {
+        e.preventDefault();
+    })
+
     if(code) {
         $('.show-hide-pass').click(function() {
             $('#pass').focus();
