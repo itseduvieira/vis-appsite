@@ -17,9 +17,12 @@ header {
 .container-header {
   width: 100%;
   height: 72px;
-  background-color: #111;
+  background-color: #fff;
   position: fixed;
   z-index: 501;
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 }
 
 .header-logo {
@@ -40,10 +43,10 @@ header {
   padding: 0;
   outline: 0;
   border: none;
-  width: 110px;
-  height: 22px;
+  width: 140px;
+  height: 60px;
   background: url("../images/logo.png") no-repeat center;
-  background-size: 110px auto;
+  background-size: 140px auto;
   font: 0/0 a;
   text-shadow: none;
   color: transparent;
