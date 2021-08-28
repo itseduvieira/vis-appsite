@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": "dist",
+    "site": "vis-appsite",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

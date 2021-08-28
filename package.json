@@ -4,7 +4,14 @@
   "description": "Visual no Ar App",
   "scripts": {
     "start": "node node_modules/gulp/bin/gulp.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node node_modules/gulp/bin/gulp.js build:dist",
+    "deploy": "node node_modules/firebase-tools/lib/bin/firebase deploy",
+    "deploy-ci": "node node_modules/firebase-tools/lib/bin/firebase deploy --token $FIREBASE_TOKEN",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "resolutions": {
+    "graceful-fs": "4.2.3"
   },
   "repository": {
     "type": "git",
@@ -15,7 +22,10 @@
   "homepage": "https://bitbucket.org/pglabs/vis-site-app#readme",
   "dependencies": {
     "browser-sync": "^2.26.3",
-    "gulp": "^3.9.1"
-  },
-  "url": "https://app.visualnoar.com.br"
+    "gulp": "^3.9.1",
+    "run-sequence": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "del": "^2.2.2",
+    "firebase-tools": "^6.2.2"
+  }
 }

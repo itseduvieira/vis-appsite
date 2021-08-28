@@ -1,6 +1,6 @@
 $(document).ready(function() {
     var code = param('code');
-    var redirect = 'https://app.visualnoar.com.br/#download';
+    var redirect = 'https://localhost:5000/#download';
 
     $('.header-logo a').click(function(e) {
         e.preventDefault();
