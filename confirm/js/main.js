@@ -22,7 +22,7 @@ $(document).ready(function() {
             }
         });
 
-        $.get('https://vis-api.herokuapp.com/activate/' + code, function(data) {
+        $.get('http://localhost:4000/activate/' + code, function(data) {
             $('#titleName').text(data.name);
             $('#email').val(data.email);
 
@@ -57,7 +57,7 @@ $(document).ready(function() {
                     password: $('#pass').val()
                 };
 
-                $.post('https://vis-api.herokuapp.com/activate/' + code, parameters, function(data) {
+                $.post('http://localhost:4000/activate/' + code, parameters, function(data) {
                     window.location = redirect;
                 }).fail(function(err) {
                     $('.sign-up-content').children().show();
