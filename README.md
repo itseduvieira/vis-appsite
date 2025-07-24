@@ -1,6 +1,6 @@
-# VIS-APPSITE
+# Visual no Ar
 
-Welcome to the **VIS-APPSITE** repository!
+Welcome to the **vis-appsite** repository!
 
 This project is the landing page for the Visual Aerial Advertising product. The site introduces the platform, showcases its features, and provides users with information and links to download the mobile app to track their aerial advertising campaigns in real time.
 
